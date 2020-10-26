@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>UnarmedAttack</defName>
+    <driverClass>BeatingsContinue.JobDriver_UnarmedAttack</driverClass>
+    <reportString>fisticuffs with TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <neverShowWeapon>true</neverShowWeapon>
+  </JobDef>
+  
+  <JobDef>
+    <defName>BeatAttack</defName>
+    <driverClass>BeatingsContinue.JobDriver_BeatAttack</driverClass>
+    <reportString>beating TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <neverShowWeapon>true</neverShowWeapon>
+  </JobDef>
+</Defs>
