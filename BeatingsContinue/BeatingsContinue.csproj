@@ -325,6 +325,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BeatDecider.cs" />
     <Compile Include="JobDriver_BeatAttack.cs" />
     <Compile Include="JobDriver_UnarmedAttack.cs" />
     <Compile Include="BeatAttack.cs" />

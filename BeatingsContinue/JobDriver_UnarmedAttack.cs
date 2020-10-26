@@ -32,20 +32,9 @@ namespace BeatingsContinue
                     EndJobWith(JobCondition.InterruptForced);
                 }
                 InteractionUtility.TryGetRandomVerbForSocialFight(base.pawn, out Verb verb);
-                if (shouldStopAttacking())
-                {
-                    EndJobWith(JobCondition.Succeeded);
-                }
-                else
-                {
-                    pawn.meleeVerbs.TryMeleeAttack(thing, verb);
-                }
-            }).FailOnDespawnedOrNull(TargetIndex.A);
-        }
+                pawn.meleeVerbs.TryMeleeAttack(thing, verb);
 
-        protected bool shouldStopAttacking()
-        {
-            return false;
+            }).FailOnDespawnedOrNull(TargetIndex.A);
         }
     }
 }

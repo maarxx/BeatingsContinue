@@ -32,7 +32,7 @@ namespace BeatingsContinue
                     EndJobWith(JobCondition.InterruptForced);
                 }
                 InteractionUtility.TryGetRandomVerbForSocialFight(base.pawn, out Verb verb);
-                if (shouldStopAttacking())
+                if (BeatDecider.shouldStopBeating(base.pawn, base.TargetA.Thing as Pawn))
                 {
                     EndJobWith(JobCondition.Succeeded);
                 }
@@ -41,23 +41,6 @@ namespace BeatingsContinue
                     pawn.meleeVerbs.TryMeleeAttack(thing, verb);
                 }
             }).FailOnDespawnedOrNull(TargetIndex.A);
-        }
-
-        protected bool shouldStopAttacking()
-        {
-            return hasEndangeredPart(base.pawn) || hasEndangeredPart(base.TargetA.Thing as Pawn);
-        }
-
-        private bool hasEndangeredPart(Pawn p)
-        {
-            foreach (BodyPartRecord bpr in p.health.hediffSet.GetInjuredParts())
-            {
-                if (p.health.hediffSet.GetPartHealth(bpr) < 10)
-                {
-                    return true;
-                }
-            }
-            return false;
         }
     }
 }

@@ -87,7 +87,8 @@ namespace BeatingsContinue
                 {
                     return delegate
                     {
-                        if (InteractionUtility.TryGetRandomVerbForSocialFight(pawn, out Verb verb))
+                        if (!BeatDecider.shouldStopBeating(pawn, target2)
+                            && InteractionUtility.TryGetRandomVerbForSocialFight(pawn, out Verb verb))
                         {
                             Job job = JobMaker.MakeJob(jobDef, target.Thing as Pawn);
                             //job.maxNumMeleeAttacks = 1;
