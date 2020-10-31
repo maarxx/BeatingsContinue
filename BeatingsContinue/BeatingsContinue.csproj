@@ -326,6 +326,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BeatDecider.cs" />
+    <Compile Include="BeatingsDefsOf.cs" />
+    <Compile Include="SuppressGizmo.cs" />
+    <Compile Include="WorkGiver_Suppress.cs" />
+    <Compile Include="Designator_Suppress.cs" />
+    <Compile Include="zJobDriver_Suppress.cs" />
     <Compile Include="JobDriver_BeatAttack.cs" />
     <Compile Include="JobDriver_UnarmedAttack.cs" />
     <Compile Include="BeatAttack.cs" />

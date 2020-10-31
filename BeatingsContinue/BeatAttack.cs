@@ -13,7 +13,7 @@ namespace BeatingsContinue
     {
         static string defaultLabel { get { return "Beat"; } }
         static string defaultDesc { get { return "Beatdown!"; } }
-        static JobDef jobDef { get { return DefDatabase<JobDef>.GetNamed("BeatAttack"); } }
+        static JobDef jobDef { get { return BeatingsDefsOf.jobDefBeat; } }
 
         public static Gizmo GetGizmo(Pawn pawn)
         {

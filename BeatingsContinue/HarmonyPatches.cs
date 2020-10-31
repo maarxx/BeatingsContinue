@@ -15,7 +15,7 @@ namespace BeatingsContinue
     {
         static Main()
         {
-            Log.Message("Hello from Harmony in scope: com.github.harmony.rimworld.maarx.beatingscontinue");
+            //Log.Message("Hello from Harmony in scope: com.github.harmony.rimworld.maarx.beatingscontinue");
             var harmony = new Harmony("com.github.harmony.rimworld.maarx.beatingscontinue");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
@@ -32,4 +32,16 @@ namespace BeatingsContinue
             __result = (__result.ToList()).AddItem(BeatAttack.GetGizmo(pawn));
         }
     }
+
+/*
+    [HarmonyPatch(typeof(Pawn))]
+    [HarmonyPatch("GetGizmos")]
+    class Patch_Pawn_GetGizmos
+    {
+        static void Postfix(ref Pawn pawn, ref IEnumerable<Gizmo> __result)
+        {
+            __result = (__result.ToList()).AddItem(SuppressGizmo.GetGizmo(pawn));
+        }
+    }
+*/
 }

@@ -15,4 +15,51 @@
     <casualInterruptible>false</casualInterruptible>
     <neverShowWeapon>true</neverShowWeapon>
   </JobDef>
+  
+  <DesignationDef>
+    <defName>Suppress</defName>
+    <texturePath>Designations/Strip</texturePath>
+    <targetType>Thing</targetType>
+  </DesignationDef>
+  
+  <!--
+  <JobDef>
+    <defName>Suppress</defName>
+    <driverClass>BeatingsContinue.JobDriver_Suppress</driverClass>
+    <reportString>suppressing TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  -->
+  
+  <WorkGiverDef>
+    <defName>Suppress</defName>
+    <label>suppress prisoners</label>
+    <giverClass>BeatingsContinue.WorkGiver_Suppress</giverClass>
+    <workType>Suppress</workType>
+    <verb>suppress</verb>
+    <gerund>suppressing</gerund>
+    <priorityInType>100</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <workTags>
+      <li>Violent</li>
+    </workTags>
+  </WorkGiverDef>
+  
+  <WorkTypeDef>
+    <defName>Suppress</defName>
+    <labelShort>Suppress</labelShort>
+    <pawnLabel>Suppress</pawnLabel>
+    <gerundLabel>suppressing</gerundLabel>
+    <description>Beat up prisoners, keeping them suppressed.</description>
+    <verb>Suppress</verb>
+    <naturalPriority>1299</naturalPriority>
+    <workTags>
+      <li>Violent</li>
+      <li>Commoner</li>
+      <li>AllWork</li>
+    </workTags>
+    <alwaysStartActive>false</alwaysStartActive>
+  </WorkTypeDef>
 </Defs>

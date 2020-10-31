@@ -14,6 +14,11 @@ namespace BeatingsContinue
             return hasEndangeredPart(beater) || hasEndangeredPart(beatee);
         }
 
+        public static bool shouldStopBeating(Pawn pawn)
+        {
+            return hasEndangeredPart(pawn);
+        }
+
         private static bool hasEndangeredPart(Pawn p)
         {
             foreach (BodyPartRecord bpr in p.health.hediffSet.GetInjuredParts())
