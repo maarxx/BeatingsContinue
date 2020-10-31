@@ -18,9 +18,9 @@ namespace BeatingsContinue
 
         public Designator_Suppress()
         {
-            defaultLabel = "Suppress1";
-            defaultDesc = "Suppress2";
-            icon = ContentFinder<Texture2D>.Get("UI/Designators/Strip");
+            defaultLabel = "Suppress";
+            defaultDesc = "Beat prisoners as much as possible, without permanent damage.";
+            icon = ContentFinder<Texture2D>.Get("UI/Designators/Tame");
             soundDragSustain = SoundDefOf.Designate_DragStandard;
             soundDragChanged = SoundDefOf.Designate_DragStandard_Changed;
             useMouseIcon = true;
@@ -34,16 +34,16 @@ namespace BeatingsContinue
             {
                 return false;
             }
-            if (!StrippablesInCell(c).Any())
+            if (!SuppressablesInCell(c).Any())
             {
-                return "MessageMustDesignateStrippable".Translate();
+                return "Must Designate Prisoners";
             }
             return true;
         }
 
         public override void DesignateSingleCell(IntVec3 c)
         {
-            foreach (Thing item in StrippablesInCell(c))
+            foreach (Thing item in SuppressablesInCell(c))
             {
                 DesignateThing(item);
             }
@@ -55,16 +55,20 @@ namespace BeatingsContinue
             {
                 return false;
             }
-            return StrippableUtility.CanBeStrippedByColony(t);
+            if (t is Pawn && (t as Pawn).IsPrisoner)
+            {
+                return true;
+            }
+            return false;
         }
 
         public override void DesignateThing(Thing t)
         {
             base.Map.designationManager.AddDesignation(new Designation(t, Designation));
-            StrippableUtility.CheckSendStrippingImpactsGoodwillMessage(t);
+            //StrippableUtility.CheckSendStrippingImpactsGoodwillMessage(t);
         }
 
-        private IEnumerable<Thing> StrippablesInCell(IntVec3 c)
+        private IEnumerable<Thing> SuppressablesInCell(IntVec3 c)
         {
             if (c.Fogged(base.Map))
             {

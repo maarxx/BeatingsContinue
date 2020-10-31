@@ -18,7 +18,7 @@
   
   <DesignationDef>
     <defName>Suppress</defName>
-    <texturePath>Designations/Strip</texturePath>
+    <texturePath>Designations/Tame</texturePath>
     <targetType>Thing</targetType>
   </DesignationDef>
   
@@ -54,7 +54,7 @@
     <gerundLabel>suppressing</gerundLabel>
     <description>Beat up prisoners, keeping them suppressed.</description>
     <verb>Suppress</verb>
-    <naturalPriority>1299</naturalPriority>
+    <naturalPriority>1375</naturalPriority>
     <workTags>
       <li>Violent</li>
       <li>Commoner</li>

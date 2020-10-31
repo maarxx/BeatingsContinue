@@ -23,7 +23,7 @@ namespace BeatingsContinue
         {
             foreach (BodyPartRecord bpr in p.health.hediffSet.GetInjuredParts())
             {
-                if (p.health.hediffSet.GetPartHealth(bpr) < 10)
+                if (p.health.hediffSet.GetPartHealth(bpr) < 11)
                 {
                     foreach (Hediff h in p.health.hediffSet.hediffs)
                     {
