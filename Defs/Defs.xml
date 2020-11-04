@@ -30,23 +30,7 @@
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
   -->
-  
-  <WorkGiverDef>
-    <defName>Suppress</defName>
-    <label>suppress prisoners</label>
-    <giverClass>BeatingsContinue.WorkGiver_Suppress</giverClass>
-    <workType>Suppress</workType>
-    <verb>suppress</verb>
-    <gerund>suppressing</gerund>
-    <priorityInType>100</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-    <workTags>
-      <li>Violent</li>
-    </workTags>
-  </WorkGiverDef>
-  
+
   <WorkTypeDef>
     <defName>Suppress</defName>
     <labelShort>Suppress</labelShort>
@@ -62,4 +46,36 @@
     </workTags>
     <alwaysStartActive>false</alwaysStartActive>
   </WorkTypeDef>
+
+  <WorkGiverDef>
+    <defName>Suppress</defName>
+    <label>suppress prisoners</label>
+    <giverClass>BeatingsContinue.WorkGiver_Suppress</giverClass>
+    <workType>Suppress</workType>
+    <verb>suppress</verb>
+    <gerund>suppressing</gerund>
+    <priorityInType>100</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <workTags>
+      <li>Violent</li>
+    </workTags>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>Suppress_TakePrisonerToBed</defName>
+    <label>take prisoners to bed</label>
+    <giverClass>WorkGiver_Warden_TakeToBed</giverClass>
+    <workType>Suppress</workType>
+    <verb>take to bed</verb>
+    <gerund>taking to bed</gerund>
+    <priorityInType>90</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <workTags>
+      <li>Social</li>
+    </workTags>
+  </WorkGiverDef>
 </Defs>
