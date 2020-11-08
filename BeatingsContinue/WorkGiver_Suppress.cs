@@ -17,14 +17,7 @@ namespace BeatingsContinue
         {
             foreach (Designation item in pawn.Map.designationManager.SpawnedDesignationsOfDef(BeatingsDefsOf.designationDef))
             {
-                if (!item.target.HasThing)
-                {
-                    Log.ErrorOnce("Strip designation has no target.", 63126);
-                }
-                else
-                {
-                    yield return item.target.Thing;
-                }
+                yield return item.target.Thing;
             }
         }
 
