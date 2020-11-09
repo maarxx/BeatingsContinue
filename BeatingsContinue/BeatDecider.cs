@@ -47,7 +47,7 @@ namespace BeatingsContinue
                         {
                             if (onlyNecessary)
                             {
-                                if (p.health.WouldDieAfterAddingHediff(DefDatabase<HediffDef>.GetNamed("MissingBodyPart"), bpr, float.MaxValue))
+                                if (p.health.WouldDieAfterAddingHediff(DefDatabase<HediffDef>.GetNamed("Bruise"), bpr, 11))
                                 {
                                     return true;
                                 }
