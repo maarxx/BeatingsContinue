@@ -25,6 +25,8 @@ Also, uh, if you're beating prisoners, you wanna probably keep going sometimes (
 
 Finally, once the beatings are done, your prisoners are going to lay there nicely downed and controlled for a while. But they'll eventually heal back up, and you wanna beat 'em again. It is annoying to remember to keep checking this. So we add our final new feature: A designator "Suppress", that you can put on prisoners, and a checkbox in the Work tab "Suppress". For any pawns with this Work checked, for any prisoners with the "Suppress" designated, the pawns will automatically come back and beat them again, as soon as they're able to (per the above limitations on when to stop).
 
+I personally suggest, for your colonist doing the beating, to replace their jaw with a denture, so they don't bite anybody, and don't cause infections.
+
 The result is a truly deranged method of prisoner management. And you could technically do all of this in pure vanilla RimWorld. We don't technically change any behaviors. We just make it easier and more convenient to be the war criminal you've always wanted to be.
 
 # How to Install
