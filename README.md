@@ -4,6 +4,8 @@ This is a mod for the game RimWorld by Ludeon Studios.
 
 It adds widgets, jobs, and work givers, for the express purpose of beating prisoners conveniently.
 
+We're on Steam: https://steamcommunity.com/sharedfiles/filedetails/?id=2324537606
+
 # Table of Contents
 
 * [Introduction and Explanation](#introduction-and-explanation)
