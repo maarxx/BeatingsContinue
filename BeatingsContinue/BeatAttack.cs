@@ -29,7 +29,7 @@ namespace BeatingsContinue
             {
                 command_Target.Disable(failStr.CapitalizeFirst() + ".");
             }
-            command_Target.action = delegate (Thing target)
+            command_Target.action = delegate (LocalTargetInfo target)
             {
                 foreach (Pawn item in Find.Selector.SelectedObjects.Where(delegate (object x)
                 {
@@ -50,7 +50,7 @@ namespace BeatingsContinue
                     }
                     else if (!failStr2.NullOrEmpty())
                     {
-                        Messages.Message(failStr2, target, MessageTypeDefOf.RejectInput, historical: false);
+                        Messages.Message(failStr2, target.Thing, MessageTypeDefOf.RejectInput, historical: false);
                     }
                 }
             };

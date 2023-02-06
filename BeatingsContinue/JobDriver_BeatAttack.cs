@@ -26,7 +26,7 @@ namespace BeatingsContinue
             yield return Toils_Combat.FollowAndMeleeAttack(TargetIndex.A, delegate
             {
                 Thing thing = job.GetTarget(TargetIndex.A).Thing;
-                Pawn p;
+                //Pawn p;
                 //if (job.reactingToMeleeThreat && (p = (thing as Pawn)) != null && !p.Awake())
                 //{
                 //    EndJobWith(JobCondition.InterruptForced);
