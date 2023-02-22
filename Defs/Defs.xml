@@ -70,7 +70,7 @@
     <workType>Beat</workType>
     <verb>take to bed</verb>
     <gerund>taking to bed</gerund>
-    <priorityInType>90</priorityInType>
+    <priorityInType>110</priorityInType>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
