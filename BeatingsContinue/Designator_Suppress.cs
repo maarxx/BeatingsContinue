@@ -9,16 +9,16 @@ using Verse;
 
 namespace BeatingsContinue
 {
-    public class Designator_Suppress : Designator
+    public class Designator_Beat : Designator
     {
         public override int DraggableDimensions => 2;
 
         //protected override DesignationDef Designation => DesignationDefOf.Strip;
         protected override DesignationDef Designation => BeatingsDefsOf.designationDef;
 
-        public Designator_Suppress()
+        public Designator_Beat()
         {
-            defaultLabel = "Suppress";
+            defaultLabel = "Beat";
             defaultDesc = "Beat prisoners as much as possible, without permanent damage.";
             icon = ContentFinder<Texture2D>.Get("UI/Designators/Tame");
             soundDragSustain = SoundDefOf.Designate_DragStandard;
@@ -34,7 +34,7 @@ namespace BeatingsContinue
             {
                 return false;
             }
-            if (!SuppressablesInCell(c).Any())
+            if (!BeatablesInCell(c).Any())
             {
                 return "Must Designate Prisoners";
             }
@@ -43,7 +43,7 @@ namespace BeatingsContinue
 
         public override void DesignateSingleCell(IntVec3 c)
         {
-            foreach (Thing item in SuppressablesInCell(c))
+            foreach (Thing item in BeatablesInCell(c))
             {
                 DesignateThing(item);
             }
@@ -68,7 +68,7 @@ namespace BeatingsContinue
             //StrippableUtility.CheckSendStrippingImpactsGoodwillMessage(t);
         }
 
-        private IEnumerable<Thing> SuppressablesInCell(IntVec3 c)
+        private IEnumerable<Thing> BeatablesInCell(IntVec3 c)
         {
             if (c.Fogged(base.Map))
             {

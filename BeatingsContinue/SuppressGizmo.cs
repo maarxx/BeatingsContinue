@@ -3,7 +3,7 @@ using Verse;
 
 namespace BeatingsContinue
 {
-    class SuppressGizmo
+    class BeatGizmo
     {
         internal static Gizmo GetGizmo(Pawn pawn)
         {

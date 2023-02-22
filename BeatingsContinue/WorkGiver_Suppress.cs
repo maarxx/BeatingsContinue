@@ -9,7 +9,7 @@ using Verse.AI;
 
 namespace BeatingsContinue
 {
-    public class WorkGiver_Suppress : WorkGiver_Scanner
+    public class WorkGiver_Beat : WorkGiver_Scanner
     {
         //public override PathEndMode PathEndMode => PathEndMode.ClosestTouch;
 
