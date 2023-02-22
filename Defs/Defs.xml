@@ -36,7 +36,7 @@
     <labelShort>Beat</labelShort>
     <pawnLabel>Beat</pawnLabel>
     <gerundLabel>beating</gerundLabel>
-    <description>Beat up prisoners, keeping them beated.</description>
+    <description>Beat up targets, keeping them controlled.</description>
     <verb>Beat</verb>
     <naturalPriority>1375</naturalPriority>
     <workTags>
