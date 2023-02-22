@@ -33,9 +33,9 @@
   <ItemGroup>
     <Compile Include="BeatDecider.cs" />
     <Compile Include="BeatingsDefsOf.cs" />
-    <Compile Include="SuppressGizmo.cs" />
-    <Compile Include="WorkGiver_Suppress.cs" />
-    <Compile Include="Designator_Suppress.cs" />
+    <Compile Include="BeatGizmo.cs" />
+    <Compile Include="WorkGiver_Beat.cs" />
+    <Compile Include="Designator_Beat.cs" />
     <Compile Include="JobDriver_BeatAttack.cs" />
     <Compile Include="JobDriver_UnarmedAttack.cs" />
     <Compile Include="BeatAttack.cs" />
