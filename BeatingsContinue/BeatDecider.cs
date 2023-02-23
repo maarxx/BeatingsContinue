@@ -23,13 +23,13 @@ namespace BeatingsContinue
             else if (pawn.IsPrisonerOfColony)
             {
                 string recruitMode = pawn.guest.interactionMode.defName;
-                if (recruitMode == "AttemptRecruit")
-                {
-                    return hasEndangeredPart(pawn);
-                }
-                else if (recruitMode == "ReduceResistance" || recruitMode == "NoInteraction")
+                if (recruitMode == "Bloodfeed" || recruitMode == "HemogenFarm")
                 {
                     return hasEndangeredPart(pawn, true);
+                }
+                else 
+                {
+                    return hasEndangeredPart(pawn);
                 }
             }
             return true;
