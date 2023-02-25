@@ -9,7 +9,7 @@
 				<order>Append</order>
 				<xpath>/Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses/li[13]</xpath>
 				<value>
-					<li>BeatingsContinue.Designator_Suppress</li>
+					<li>BeatingsContinue.Designator_Beat</li>
 				</value>
 			</li>
 		</operations>

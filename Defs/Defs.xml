@@ -3,7 +3,7 @@
   <JobDef>
     <defName>UnarmedAttack</defName>
     <driverClass>BeatingsContinue.JobDriver_UnarmedAttack</driverClass>
-    <reportString>fisticuffs with TargetA.</reportString>
+    <reportString>unarmed attacking TargetA.</reportString>
     <casualInterruptible>false</casualInterruptible>
     <neverShowWeapon>true</neverShowWeapon>
   </JobDef>
@@ -17,27 +17,27 @@
   </JobDef>
   
   <DesignationDef>
-    <defName>Suppress</defName>
+    <defName>Beat</defName>
     <texturePath>Designations/Tame</texturePath>
     <targetType>Thing</targetType>
   </DesignationDef>
   
   <!--
   <JobDef>
-    <defName>Suppress</defName>
-    <driverClass>BeatingsContinue.JobDriver_Suppress</driverClass>
-    <reportString>suppressing TargetA.</reportString>
+    <defName>Beat</defName>
+    <driverClass>BeatingsContinue.JobDriver_Beat</driverClass>
+    <reportString>beating TargetA.</reportString>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
   -->
 
   <WorkTypeDef>
-    <defName>Suppress</defName>
-    <labelShort>Suppress</labelShort>
-    <pawnLabel>Suppress</pawnLabel>
-    <gerundLabel>suppressing</gerundLabel>
-    <description>Beat up prisoners, keeping them suppressed.</description>
-    <verb>Suppress</verb>
+    <defName>Beat</defName>
+    <labelShort>Beat</labelShort>
+    <pawnLabel>Beat</pawnLabel>
+    <gerundLabel>beating</gerundLabel>
+    <description>Beat up targets, keeping them controlled.</description>
+    <verb>Beat</verb>
     <naturalPriority>1375</naturalPriority>
     <workTags>
       <li>Violent</li>
@@ -48,12 +48,12 @@
   </WorkTypeDef>
 
   <WorkGiverDef>
-    <defName>Suppress</defName>
-    <label>suppress prisoners</label>
-    <giverClass>BeatingsContinue.WorkGiver_Suppress</giverClass>
-    <workType>Suppress</workType>
-    <verb>suppress</verb>
-    <gerund>suppressing</gerund>
+    <defName>Beat</defName>
+    <label>beat prisoners</label>
+    <giverClass>BeatingsContinue.WorkGiver_Beat</giverClass>
+    <workType>Beat</workType>
+    <verb>beat</verb>
+    <gerund>beating</gerund>
     <priorityInType>100</priorityInType>
     <requiredCapacities>
       <li>Manipulation</li>
@@ -64,13 +64,13 @@
   </WorkGiverDef>
 
   <WorkGiverDef>
-    <defName>Suppress_TakePrisonerToBed</defName>
+    <defName>Beat_TakePrisonerToBed</defName>
     <label>take prisoners to bed</label>
     <giverClass>WorkGiver_Warden_TakeToBed</giverClass>
-    <workType>Suppress</workType>
+    <workType>Beat</workType>
     <verb>take to bed</verb>
     <gerund>taking to bed</gerund>
-    <priorityInType>90</priorityInType>
+    <priorityInType>110</priorityInType>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>

@@ -40,7 +40,7 @@ namespace BeatingsContinue
     {
         static void Postfix(ref Pawn pawn, ref IEnumerable<Gizmo> __result)
         {
-            __result = (__result.ToList()).AddItem(SuppressGizmo.GetGizmo(pawn));
+            __result = (__result.ToList()).AddItem(BeatGizmo.GetGizmo(pawn));
         }
     }
 */

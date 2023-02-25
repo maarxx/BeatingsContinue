@@ -9,7 +9,7 @@ namespace BeatingsContinue
 {
     class BeatingsDefsOf
     {
-        public static DesignationDef designationDef => DefDatabase<DesignationDef>.GetNamed("Suppress");
+        public static DesignationDef designationDef => DefDatabase<DesignationDef>.GetNamed("Beat");
         public static JobDef jobDefBeat => DefDatabase<JobDef>.GetNamed("BeatAttack");
         public static JobDef jobDefUnarmed => DefDatabase<JobDef>.GetNamed("UnarmedAttack");
     }
