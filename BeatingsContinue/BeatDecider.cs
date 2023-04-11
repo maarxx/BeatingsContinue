@@ -39,7 +39,7 @@ namespace BeatingsContinue
         {
             foreach (BodyPartRecord bpr in p.health.hediffSet.GetInjuredParts().ToList().ListFullCopy())
             {
-                if (p.health.hediffSet.GetPartHealth(bpr) < 11)
+                if (p.health.hediffSet.GetPartHealth(bpr) < 17)
                 {
                     foreach (Hediff h in p.health.hediffSet.hediffs.ListFullCopy())
                     {
