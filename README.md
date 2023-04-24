@@ -2,15 +2,23 @@
 
 This is a mod for the game RimWorld by Ludeon Studios.
 
-It adds widgets, jobs, and work givers, for the express purpose of beating prisoners conveniently.
+The mod adds widgets, jobs, and work givers, for the express purpose of beating prisoners conveniently and automatically.
 
 We're on Steam: https://steamcommunity.com/sharedfiles/filedetails/?id=2324537606
 
 # Table of Contents
 
-* [Introduction and Explanation](#introduction-and-explanation)
+* [Introduction](#introduction)
 
-# Introduction and Explanation
+* [Explanation](#explanation)
+
+# Introduction
+
+This is a mod for the game RimWorld by Ludeon Studios.
+
+The mod adds widgets, jobs, and work givers, for the express purpose of beating prisoners conveniently and automatically.
+
+# Explanation
 
 Alright ... so ... this mod is probably a little out-there. Bear with me. Here's the deal.
 
