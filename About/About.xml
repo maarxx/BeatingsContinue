@@ -3,7 +3,11 @@
   <name>BeatingsContinue</name>
   <author>Maarx</author>
   <url>https://github.com/maarxx/BeatingsContinue/</url>
-  <description>Adds widgets, jobs, and work givers, for the express purpose of beating prisoners conveniently.</description>
+  <description>
+This is a mod for the game RimWorld by Ludeon Studios.
+
+The mod adds widgets, jobs, and work givers, for the express purpose of beating prisoners conveniently and automatically.
+  </description>
   <packageId>maarx.beatingscontinue</packageId>
   <supportedVersions>
     <li>1.2</li>
