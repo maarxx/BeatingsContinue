@@ -9,14 +9,20 @@ We're on Steam: https://steamcommunity.com/sharedfiles/filedetails/?id=232453760
 # Table of Contents
 
 * [Introduction](#introduction)
-
+* [Links](#links)
 * [Explanation](#explanation)
 
 # Introduction
 
-This is a mod for the game RimWorld by Ludeon Studios.
-
 The mod adds widgets, jobs, and work givers, for the express purpose of beating prisoners conveniently and automatically.
+
+# Links
+
+We're on Steam: https://steamcommunity.com/sharedfiles/filedetails/?id=2324537606
+
+We're on GitHub: https://github.com/maarxx/BeatingsContinue
+
+For reporting bugs or requesting features, Github Issues are better than Steam Workshop Comments.
 
 # Explanation
 
